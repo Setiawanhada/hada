@@ -14,7 +14,7 @@ class Welcome extends CI_Controller {
 	{
 		$invite = '';
 		// $web = $this->uri->getSegment(2); //memabaca domain user
-		$invite = $this->uri->getSegment(3); //orang yang diundang disini
+		// $invite = $this->uri->getSegment(3); //orang yang diundang disini
 
 		// $data['web'] = urldecode($web);
 		// $data['invite'] = urldecode($invite);
