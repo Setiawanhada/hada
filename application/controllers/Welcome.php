@@ -9,41 +9,16 @@ class Welcome extends CI_Controller {
         // $this->load->model("M_undangan");
 		
 	}
-	// public function index()
-	// {
-	// 	$this->load->view('welcome_message');
-	// }
 
 	public function index()
 	{
 		$invite = '';
 		// $web = $this->uri->getSegment(2); //memabaca domain user
-		// $invite = $this->uri->getSegment(3); //orang yang diundang disini
+		$invite = $this->uri->getSegment(3); //orang yang diundang disini
 
 		// $data['web'] = urldecode($web);
 		// $data['invite'] = urldecode($invite);
 		
-		//melakukan pengeceakan ke database
-		// $cekDomain = $this->UndanganModel->cek_domain(urldecode($web));
-
-		//jika ditemukan lanjut ke proses selanjutnya
-		// if(!empty($cekDomain->getResult())){
-			
-			//jika data ditemukan maka kita akan ambil id_user nya
-			// foreach ($cekDomain->getResult() as $row)
-			// {
-			// 	$idnya = $row->id_user;
-			// 	$this->session->set('id_user',$idnya); //save di session untuk di load jika komentar
-			// }
-			
-			//id_user kemudian digunakan untuk mengambil semua data yang dibutuhkan
-			// $data['mempelai'] = $this->UndanganModel->get_mempelai($idnya);
-			// $data['acara'] = $this->UndanganModel->get_acara($idnya);
-			// $data['komen'] = $this->UndanganModel->get_komen($idnya);
-			// $data['data'] = $this->UndanganModel->get_data($idnya);
-			// $data['cerita'] = $this->UndanganModel->get_cerita($idnya);
-			// $data['album'] = $this->UndanganModel->get_album($idnya);
-			// $data['rules'] = $this->UndanganModel->get_rules($idnya);
 			$mempelai = array(
 				'nama_panggilan_pria'   => 'hada',
 				'nama_lengkap_pria'     => 'Suhada Budi Setiawan A.Md.Kom',
@@ -64,7 +39,7 @@ class Welcome extends CI_Controller {
 				'tanggal_akad'    => '2022/11/06',
 				'tempat_akad'     => 'Balai Desa Jatimulyo',
 				'alamat_akad'     => 'Jatimulyo, Kec.Pedan, Kabupaten Klaten, Jawa Tengah',
-				'tanggal_resepsi' => '2022/21/06',
+				'tanggal_resepsi' => '2022/11/06',
 				'jam_resepsi'     => '09.00 WIB',
 				'jam_akad'        => '07.00 WIB',
 				'tempat_resepsi'  => 'Balai Desa Jatimulyo',
@@ -82,38 +57,15 @@ class Welcome extends CI_Controller {
 			$data['rules'] = '';
 			$data['invite'] = $invite;
 
-			//cek pada tabel order untuk mengambil tema yang digunakan user
-			// $ordernya = $this->UndanganModel->get_order($idnya);
-
-			//ini untuk mendefinisikan tema undangan secara default 
-			//apabila tema yang direquest user tidak ditemukan
 			$temanya = 'blueroses';
 			
-			//jika tema ditemukan maka
-			//variabel tema akan di 'repleace' sesuai tema pilihan user
-			// foreach ($ordernya->getResult() as $row){ 
-			// 	$temanya = $row->nama_theme;
-			// }
-			$invite = "tes";
-			//insert traffic to db
-			// if($invite != NULL){
-			// 	$dataTraffic['nama_pengunjung'] = urldecode($invite);
-			// }else{
-			// 	$dataTraffic['nama_pengunjung'] = "Unknown";
-			// }
-			// $dataTraffic['id_user'] = $idnya;
 			$dataTraffic['id_user'] = '';
-			// $dataTraffic['addr'] = $this->get_client_ip();
-
-			// $this->UndanganModel->insert_traffic($dataTraffic);
+			
 			
 
 			//kirim semua data pada view
 			$this->load->view('undangan/themes/'.$temanya, $data);
-			// return view('undangan/themes/'.$temanya, $data);
-		// }else{
-			// return $this->index();
-		// }
+			
 	}
 	public function add_komentar(){
 		$data['nama_komentar'] = $_POST['nama'];
