@@ -21,11 +21,11 @@
     <?php }?>
 
 	<!-- CSS STYLE AREA	 -->
-    <link rel="icon" href="<?php echo base_url() ?>/assets/base/img/favicon.png?<?= date("Y-m-d"); ?>">
-    <link href="<?php echo base_url() ?>/assets/themes/tealflower/css/bootstrap.min.css?SIDOINIKAHV2" rel="stylesheet">
-    <link href="<?php echo base_url() ?>/assets/themes/tealflower/css/jquery.fancybox.css?SIDOINIKAHV2" rel="stylesheet">	
-	<link rel="stylesheet" href="<?php echo base_url() ?>/assets/themes/tealflower/mdi/css/materialdesignicons.min.css?SIDOINIKAHV2">
-	<link rel="stylesheet" href="<?php echo base_url() ?>/assets/themes/tealflower/css/style.css?SIDOINIKAHV2">
+    <link rel="icon" href="<?php echo base_url() ?>assets/base/img/favicon.png?<?= date("Y-m-d"); ?>">
+    <link href="<?php echo base_url() ?>assets/themes/tealflower/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/themes/tealflower/css/jquery.fancybox.css" rel="stylesheet">	
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/themes/tealflower/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/themes/tealflower/css/style.css">
 
     
 </head>
@@ -35,7 +35,7 @@
 <!-- ============== HALAMAN AWAL =============== -->
 <div class="thebegining">
 	<div class="content-thebegining">
-		<img src="<?php echo base_url() ?>/assets/base/img/logo2.png" style="width:100px;height: 100px;"> <br>		
+		<img src="<?php echo base_url() ?>assets/base/img/logo2.png" style="width:100px;height: 100px;"> <br>		
 	</div>
 
 	<div class="salam">
@@ -57,7 +57,7 @@
 	<!-- GAMBAR DEKORASI KIRI -->
 	<!-- <img src="<?php echo base_url() ?>/assets/themes/tealflower/img/kiri-atas.png" class="imgatas-kiri"> -->
 	<!-- GAMBAR DEKORASI KANAN --> 
-	<img src="<?php echo base_url() ?>/assets/themes/tealflower/img/kanan-atas.png" class="imgatas-kanan"> 
+	<img src="<?php echo base_url() ?>assets/themes/tealflower/img/kanan-atas.png" class="imgatas-kanan"> 
 </div>
 
 <div class="dekorasi-sampul">
@@ -76,7 +76,7 @@
         $kunci = $row->kunci;
 		$youtube = $row->video;
 		$salam_pembuka = $row->salam_pembuka;
-		$musiknya = "/assets/users/".$kunci."/musik.mp3";
+		$musiknya = "assets/users/".$kunci."/musik.mp3";
 		$maps = $row->maps;
     }
 	?>
@@ -96,10 +96,10 @@
             </tr>
             <tr>
                 <th style="position: relative;text-align: center;display:block;margin-top:40px">
-					<img src="<?= base_url() ?>/assets/users/<?= $kunci; ?>/kita.png" class="cover-foto"/>
+					<img src="<?= base_url() ?>assets/users/<?= $kunci; ?>/kita.png" class="cover-foto"/>
 					
 					<!-- image border cover -->
-                    <img src="<?= base_url() ?>/assets/themes/tealflower/img/bg-flower.png" class="cover-border" /><br>
+                    <img src="<?= base_url() ?>assets/themes/tealflower/img/bg-flower.png" class="cover-border" /><br>
 					<!-- image border cover -->
 
                 </th>
@@ -120,16 +120,16 @@
 	
 	<!-- ============== MEMPELAI =============== -->
     <div id="mempelai-konten" class="konten" style="display: none;">   
-		<img src="<?php echo base_url() ?>/assets/base/img/bismillah.png" class="mempelai-salam-pembuka"/><br>
+		<img src="<?php echo base_url() ?>assets/base/img/bismillah.png" class="mempelai-salam-pembuka"/><br>
         <p class="mempelai-intermezzo" ><?= $salam_pembuka ?></p>
 
-        <img src="<?= base_url() ?>/assets/users/<?= $kunci; ?>/groom.png" class="mempelai-img" />
+        <img src="<?= base_url() ?>assets/users/<?= $kunci; ?>/groom.png" class="mempelai-img" />
 
         <h1 class="mempelai-pria-nama"><?php echo $row->nama_pria; ?></h1>
         <p class="mempelai-pria-ortu"><?php echo "Putra ".$row->nama_ayah_pria . " dan " .$row->nama_ibu_pria  ?></p> 
         <h1 class="dengan">dengan</h1>
 
-        <img src="<?= base_url() ?>/assets/users/<?= $kunci; ?>/bride.png" class="mempelai-img"/>
+        <img src="<?= base_url() ?>assets/users/<?= $kunci; ?>/bride.png" class="mempelai-img"/>
 
         <h1 class="mempelai-wanita-nama"><?php echo $row->nama_wanita; ?></h1>
         <p class="mempelai-wanita-ortu"><?php echo "Putri ".$row->nama_ayah_wanita . " dan " .$row->nama_ibu_wanita  ?></p>
@@ -154,7 +154,7 @@
 			<table class="tb-acara">
 				<thead>
 					<th colspan="4" class="acara-title">
-						<img src="<?php echo base_url() ?>/assets/themes/tealflower/img/akad-badge.png">
+						<img src="<?php echo base_url() ?>assets/themes/tealflower/img/akad-badge.png">
 					</th>
 				</thead>
 				<tbody>
@@ -187,7 +187,7 @@
 				<thead>
 					<th colspan="4" class="acara-title">
 						
-					<img src="<?php echo base_url() ?>/assets/themes/tealflower/img/resepsi-badge.png">
+					<img src="<?php echo base_url() ?>assets/themes/tealflower/img/resepsi-badge.png">
 					</th>
 				</thead>
 				<tbody>
@@ -237,8 +237,8 @@
 							<?php  foreach($album as $key => $data) {  ?>
 
 								<div class="grid">
-									<a href="<?php echo base_url() ?>/assets/users/<?php echo $kunci.'/'.$data['album'] ?>.png" class="fancybox" data-fancybox-group="gall-1">
-										<img src="<?php echo base_url() ?>/assets/users/<?php echo $kunci.'/'.$data['album']; ?>.png" alt>
+									<a href="<?php echo base_url() ?>assets/users/<?php echo $kunci.'/'.$data['album'] ?>.png" class="fancybox" data-fancybox-group="gall-1">
+										<img src="<?php echo base_url() ?>assets/users/<?php echo $kunci.'/'.$data['album']; ?>.png" alt>
 									</a>
 								</div>
 
@@ -525,7 +525,7 @@
 	<!-- GAMBAR DEKORASI KIRI --> 
 	<!-- <img class="imgbawah-kanan" src="<?php echo base_url() ?>/assets/themes/tealflower/img/kanan-bawah.png" >  -->
 	<!-- GAMBAR DEKORASI KIRI --> 
-	<img class="imgbawah-kiri" src="<?php echo base_url() ?>/assets/themes/tealflower/img/kiri-bawah.png" > 
+	<img class="imgbawah-kiri" src="<?php echo base_url() ?>assets/themes/tealflower/img/kiri-bawah.png" > 
 </div>
 
 <div class="dekorasi-sampul dekorasi-sampul-bawah">
@@ -546,10 +546,10 @@
 <!-- mengirimkan data php ke javascript -->
 
 <!-- JS AREA -->
-<script src="<?php echo base_url() ?>/assets/themes/tealflower/js/moment-with-locales.js"></script>
-<script src="<?php echo base_url() ?>/assets/themes/tealflower/js/bootstrap.min.js" ></script>
-<script src="<?php echo base_url() ?>/assets/themes/tealflower/js/jquery.min.js"></script>
-<script src="<?php echo base_url() ?>/assets/themes/tealflower/js/jquery-plugin-collection.js"></script>
-<script src="<?php echo base_url() ?>/assets/themes/tealflower/js/script.js"></script>
+<script src="<?php echo base_url() ?>assets/themes/tealflower/js/moment-with-locales.js"></script>
+<script src="<?php echo base_url() ?>assets/themes/tealflower/js/bootstrap.min.js" ></script>
+<script src="<?php echo base_url() ?>assets/themes/tealflower/js/jquery.min.js"></script>
+<script src="<?php echo base_url() ?>assets/themes/tealflower/js/jquery-plugin-collection.js"></script>
+<script src="<?php echo base_url() ?>assets/themes/tealflower/js/script.js"></script>
 
 </html>
