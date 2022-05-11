@@ -313,16 +313,7 @@
 			</div>
 			<div class="komen-netizen">
 				<div class="layout-komen">
-					<?php  foreach($komen as $key => $data) { ?>
-					<div class="komen">
-						<div class="col-12 komen-nama">
-							<?= ($data['nama_komentar']); ?>
-						</div>
-						<div class="col-12 komen-isi">
-							<?= ($data['isi_komentar']); ?>
-						</div>
-					</div>
-					<?php } ?>
+					
 				</div>
 
 				<a href="#" id="loadMore" class="btn btn-primary btn-block" role="button">Lebih Banyak.</a>

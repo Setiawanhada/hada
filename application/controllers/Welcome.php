@@ -6,7 +6,7 @@ class Welcome extends CI_Controller {
 	public function __construct()
     {
         parent::__construct();
-        $this->load->model("M_undangan");
+        // $this->load->model("M_undangan");
 		
 	}
 	// public function index()
@@ -75,7 +75,7 @@ class Welcome extends CI_Controller {
 			);
 			$data['mempelai'] = $mempelai;
 			$data['acara'] = $acara;
-			$data['komen'] = $this->M_undangan->get_data_komen();
+			$data['komen'] = '';
 			$data['data'] = $dat;
 			$data['cerita'] = '';
 			$data['album'] = $album;
