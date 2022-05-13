@@ -323,7 +323,7 @@
 		</div>
 
 		<!-- ============== CERITA =============== -->
-		<!-- <div id="cerita-konten" style="display: none;" class="konten">
+		<div id="cerita-konten" style="display: none;" class="konten">
 
 			<section class="cerita section-padding" id="cerita">
 				<div class="container">
@@ -334,15 +334,35 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="main-timeline">
-
-
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content">
+										<span class="date">23 Januari 2019</span>
+										<h4 class="title">Kenal 1</h4>
+										<p class="description">
+										vfvfvgfgfdgfdffdfd
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="main-timeline">
+								<div class="timeline">
+									<div class="timeline-icon"></div>
+									<div class="timeline-content">
+										<span class="date">23 Januari 2019</span>
+										<h4 class="title">Kenal 2</h4>
+										<p class="description">
+										vfvfvgfgfdgfdffdfd
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-		</div> -->
+		</div>
 
 		<!-- ============== LOKASI =============== -->
 		<div id="lokasi-konten" style="display: none;" class="konten">
@@ -447,6 +467,12 @@
 							Galeri
 						</div>
 					</div> -->
+					<div class="mobile-bottom-nav__item" id="cerita">
+					<div class="mobile-bottom-nav__item-content icons">
+						<i class="navbar-icon mdi mdi-chart-bubble" ></i>
+						 Cerita Kita
+					</div>		
+				</div>
 					<div class="mobile-bottom-nav__item" id="ucapan">
 						<div class="mobile-bottom-nav__item-content icons">
 							<i class="navbar-icon mdi mdi-message-bulleted"></i>
