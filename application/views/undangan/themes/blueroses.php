@@ -167,7 +167,7 @@
 					<tbody>
 						<tr>
 							<th class="tb-ic-acara"><i class="mdi mdi-calendar icon-acara"></th>
-							<th class="tb-ket-acara"> Tanggal</th>
+							<th class="tb-ket-acara"> Tanggalll</th>
 							<th class="tb-anu-acara">:</th>
 							<th class="tb-isi-acara" id="tanggal-acara-akad"><?php echo $acara['tanggal_akad']; ?></th>
 						</tr>
